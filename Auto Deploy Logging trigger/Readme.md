@@ -1,10 +1,12 @@
 # Automatic deploy of SQL logging trigger for table changes
-This folder will show you how I develop once and then am able to deploy ongoingly by changing some configuration
+This folder will show you how I develop once and then am able to deploy triggers ongoingly by just executing the proc...
 
 ### Instructions ###
-1. Run 1_Setup.sql on any open SQL Server instance.
-2. Run 2_Config.sql to update tb_TriggerInstall
-3. Run 3_Execute.sql to install logging triggers on whichever tables are indicated in tb_triggerInstall.
+Run 1_Setup.sql on any open SQL Server instance.
 
 ### Explanation/Walkthrough ###
+The Above will create a new database add add a few tables (namely tb_bob which we are wanting to log activity)
+Then the proc is executed with tb_bob as an input and the proc creates a trigger on tb_bob.
+From then on any changes made on tb_bob Inserts updates etc... will populate the logging table dbo.tb_LoggedValues
+
 Youtube link? Still to come/be created...
