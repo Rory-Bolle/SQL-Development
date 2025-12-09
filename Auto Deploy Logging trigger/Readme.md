@@ -1,5 +1,5 @@
 # Automatic deploy of SQL logging trigger for table changes
-This folder will show you how I develop once and then am able to deploy triggers ongoingly by just executing the proc...
+This folder will show you how I develop once and then am able to deploy the same trigger to new tables by just executing the proc...
 
 ### Instructions ###
 Run 1_Setup.sql on any open SQL Server instance.
