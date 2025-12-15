@@ -13,4 +13,7 @@ if not exist "%script%" (
 rem Forward all arguments to the PowerShell script
 pwsh.exe -NoProfile -ExecutionPolicy Bypass -File "%script%" -- %*
 endlocal
+Pause
+
 exit /b %ERRORLEVEL%
+
